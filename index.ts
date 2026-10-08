@@ -8,7 +8,7 @@
  */
 
 // ── API client (inject your own Supabase client) ─────────────────────────────
-export { createApiClient, ApiClientError } from "./lib/api-client";
+export { createApiClient, ApiClientError, isCrisisResponse } from "./lib/api-client";
 export type { SupabaseLike, SupabaseLikeError, FeatherTapApi } from "./lib/api-client";
 export type * from "./lib/api-client";
 
