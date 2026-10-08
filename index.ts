@@ -13,6 +13,7 @@ export type { SupabaseLike, SupabaseLikeError, FeatherTapApi } from "./lib/api-c
 export type * from "./lib/api-client";
 
 // ── Domain logic ─────────────────────────────────────────────────────────────
+export * from "./lib/audioSync";
 export * from "./lib/ariaQuotes";
 export * from "./lib/errorMessages";
 export * from "./lib/firstTap";
