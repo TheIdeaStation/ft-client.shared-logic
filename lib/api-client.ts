@@ -14,13 +14,29 @@
  * the injected surface stays deliberately tiny — see `SupabaseLike`.
  */
 
-/** Shape of an error returned by supabase-js. */
+/**
+ * The only part of a supabase-js error this module reads.
+ *
+ * Deliberately NOT given an index signature: supabase-js's own error classes
+ * (e.g. PostgrestError) have none, and adding one here would make them
+ * unassignable.
+ */
 export interface SupabaseLikeError {
   message: string;
-  [key: string]: unknown;
 }
 
-/** The only part of a Supabase client this module needs. */
+/**
+ * The only part of a Supabase client this module needs.
+ *
+ * A real `SupabaseClient` is NOT directly assignable to this: supabase-js types
+ * `body` as a narrow union, and function parameters are contravariant, so no
+ * single body type satisfies both this module's call sites (typed interfaces,
+ * which have no index signature) and theirs.
+ *
+ * That is deliberate. Each app supplies a small adapter mapping its concrete
+ * client onto this interface — the one place platform specifics are allowed to
+ * meet the shared contract. See `createApiClient` usage in each app.
+ */
 export interface SupabaseLike {
   functions: {
     invoke: (
