@@ -14,6 +14,7 @@ export type * from "./lib/api-client";
 
 // ── Domain logic ─────────────────────────────────────────────────────────────
 export * from "./lib/audioSync";
+export * from "./lib/conversationLogic";
 export * from "./lib/ariaQuotes";
 export * from "./lib/errorMessages";
 export * from "./lib/firstTap";
