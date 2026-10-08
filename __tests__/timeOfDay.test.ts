@@ -1,4 +1,4 @@
-import { getTimeOfDay, timeOfDayForHour } from "@/lib/timeOfDay";
+import { getTimeOfDay, timeOfDayForHour } from "../lib/timeOfDay";
 
 describe("timeOfDayForHour", () => {
   test("daytime hours", () => {

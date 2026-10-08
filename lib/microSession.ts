@@ -4,7 +4,7 @@
  * all timing/progression logic lives here so it can be unit-tested at 100%.
  */
 
-import type { MicroSegment } from "@/lib/api-client";
+import type { MicroSegment } from "./api-client";
 
 export interface SegmentSpan {
   segment: MicroSegment;

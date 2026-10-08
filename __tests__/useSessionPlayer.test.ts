@@ -3,8 +3,8 @@ import {
   INITIAL_STATE,
   type SessionPlayerState,
   type SessionPlayerAction,
-} from "@/hooks/useSessionPlayer";
-import type { TappingScript } from "@/types/tapping";
+} from "../hooks/useSessionPlayer";
+import type { TappingScript } from "../types/tapping";
 
 const mockScript: TappingScript = {
   sessionId: "test-session",
@@ -595,7 +595,7 @@ describe("useSessionPlayer hook", () => {
 
   test("hook exports are importable and defined", () => {
     // Verify the hook module exports
-    const mod = require("@/hooks/useSessionPlayer");
+    const mod = require("../hooks/useSessionPlayer");
     expect(mod.useSessionPlayer).toBeDefined();
     expect(mod.createReducer).toBeDefined();
     expect(mod.INITIAL_STATE).toBeDefined();
@@ -610,7 +610,7 @@ describe("useSessionPlayer hook", () => {
 
     // Re-import after mock
     jest.resetModules();
-    const { useSessionPlayer } = require("@/hooks/useSessionPlayer");
+    const { useSessionPlayer } = require("../hooks/useSessionPlayer");
 
     const result = useSessionPlayer(mockScript);
     expect(result.state).toBeDefined();
@@ -637,7 +637,7 @@ describe("useSessionPlayer hook", () => {
     }));
 
     jest.resetModules();
-    const { useSessionPlayer } = require("@/hooks/useSessionPlayer");
+    const { useSessionPlayer } = require("../hooks/useSessionPlayer");
 
     const result = useSessionPlayer(mockScript);
 
@@ -689,7 +689,7 @@ describe("useSessionPlayer hook", () => {
     }));
 
     jest.resetModules();
-    const { useSessionPlayer } = require("@/hooks/useSessionPlayer");
+    const { useSessionPlayer } = require("../hooks/useSessionPlayer");
 
     const result = useSessionPlayer(mockScript, true);
     expect(result.state.phase).toBe("countdown");
@@ -702,7 +702,7 @@ describe("useSessionPlayer hook", () => {
     }));
 
     jest.resetModules();
-    const { useSessionPlayer } = require("@/hooks/useSessionPlayer");
+    const { useSessionPlayer } = require("../hooks/useSessionPlayer");
 
     const result = useSessionPlayer(mockScript, false);
     expect(result.state.phase).toBe("pre_sud");

@@ -3,9 +3,9 @@ import {
   microScriptSummary,
   MODALITY_LABEL,
   storedSessionToScript,
-} from "@/lib/sessionScript";
-import type { SessionScript } from "@/lib/api-client";
-import type { Database } from "@/types/database";
+} from "../lib/sessionScript";
+import type { SessionScript } from "../lib/api-client";
+import type { Database } from "../types/database";
 
 type SessionRow = Database["public"]["Tables"]["sessions"]["Row"];
 

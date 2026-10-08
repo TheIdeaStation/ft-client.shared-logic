@@ -17,7 +17,7 @@ import {
   shouldOfferExtension,
   getExtensionMessage,
   getSessionTargetDescription,
-} from "@/lib/sessionTarget";
+} from "../lib/sessionTarget";
 
 // ============================================================================
 // TESTS

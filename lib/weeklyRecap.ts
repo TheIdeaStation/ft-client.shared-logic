@@ -1,4 +1,4 @@
-import type { WeeklyRecapResponse } from "@/lib/api-client";
+import type { WeeklyRecapResponse } from "./api-client";
 
 export function getAriaNote(recap: WeeklyRecapResponse): string {
   if (recap.journeys_completed > 0) {

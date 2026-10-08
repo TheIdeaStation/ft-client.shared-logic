@@ -16,7 +16,7 @@ import {
   getFirstFreeSession,
   getQuickTapGreeting,
   getPersonalizedCTAText,
-} from "@/lib/firstTap";
+} from "../lib/firstTap";
 
 // ============================================================================
 // TESTS

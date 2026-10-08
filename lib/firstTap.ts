@@ -5,7 +5,7 @@
  * entry to EFT tapping before committing to a full journey.
  */
 
-import { CATEGORIES, PRE_BUILT_SESSIONS, type PreBuiltCategory, type PreBuiltSession } from "@/constants/preBuiltSessions";
+import { CATEGORIES, PRE_BUILT_SESSIONS, type PreBuiltCategory, type PreBuiltSession } from "../constants/preBuiltSessions";
 
 /**
  * Is this a first-time user who hasn't tapped yet?

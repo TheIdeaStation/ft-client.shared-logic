@@ -3,9 +3,9 @@
  * Display/shape logic only — no business rules (those live on the server).
  */
 
-import type { Modality, SessionScript } from "@/lib/api-client";
-import type { Database } from "@/types/database";
-import type { ScriptSummary } from "@/types/conversation";
+import type { Modality, SessionScript } from "./api-client";
+import type { Database } from "../types/database";
+import type { ScriptSummary } from "../types/conversation";
 
 type SessionRow = Database["public"]["Tables"]["sessions"]["Row"];
 

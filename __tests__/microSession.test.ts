@@ -1,4 +1,4 @@
-import type { MicroSegment } from "@/lib/api-client";
+import type { MicroSegment } from "../lib/api-client";
 import {
   formatMs,
   kindLabel,
@@ -7,7 +7,7 @@ import {
   segmentIndexAtMs,
   segmentSpans,
   totalDurationMs,
-} from "@/lib/microSession";
+} from "../lib/microSession";
 
 const segs: MicroSegment[] = [
   { kind: "guidance", text: "settle", durationMs: 4000 },

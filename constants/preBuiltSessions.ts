@@ -1,4 +1,4 @@
-import type { TappingScript, TappingRound } from "@/types/tapping";
+import type { TappingScript, TappingRound } from "../types/tapping";
 
 export interface PreBuiltCategory {
   id: string;

@@ -6,7 +6,7 @@
  */
 
 // Mock the preBuiltSessions constants
-jest.mock("@/constants/preBuiltSessions", () => ({
+jest.mock("../constants/preBuiltSessions", () => ({
   CATEGORIES: [
     { id: "anxiety", name: "Anxiety" },
     { id: "stress", name: "Stress" },
@@ -32,7 +32,7 @@ import {
   getPostSessionRecommendations,
   getTimeOfDay,
   type RecommendationContext,
-} from "@/lib/recommendations";
+} from "../lib/recommendations";
 
 const baseContext: RecommendationContext = {
   journeys: [],

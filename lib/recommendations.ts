@@ -1,5 +1,5 @@
-import type { Database } from "@/types/database";
-import { CATEGORIES, PRE_BUILT_SESSIONS, type PreBuiltSession } from "@/constants/preBuiltSessions";
+import type { Database } from "../types/database";
+import { CATEGORIES, PRE_BUILT_SESSIONS, type PreBuiltSession } from "../constants/preBuiltSessions";
 
 type Session = Database["public"]["Tables"]["sessions"]["Row"];
 type Journey = Database["public"]["Tables"]["journeys"]["Row"];

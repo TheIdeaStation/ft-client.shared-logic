@@ -11,15 +11,15 @@
  * Coverage target: 95%+ statement coverage of lib/api-client.ts
  */
 
-import { createApiClient, ApiClientError } from "@/lib/api-client";
-import type { SupabaseLike } from "@/lib/api-client";
+import { createApiClient, ApiClientError } from "../lib/api-client";
+import type { SupabaseLike } from "../lib/api-client";
 import type {
   AiConversationRequest,
   GenerateTappingScriptRequest,
   GenerateExploreAudioRequest,
   GenerateVoiceRequest,
   SendPushRequest,
-} from "@/lib/api-client";
+} from "../lib/api-client";
 
 // ── Injected fake client ───────────────────────────────────────────────────
 
@@ -1118,8 +1118,8 @@ describe("cross-cutting edge cases", () => {
 
   test("api is a singleton instance", async () => {
     // Verify the exported api is consistent
-    const { api: api1 } = require("@/lib/api-client");
-    const { api: api2 } = require("@/lib/api-client");
+    const { api: api1 } = require("../lib/api-client");
+    const { api: api2 } = require("../lib/api-client");
     expect(api1).toBe(api2);
   });
 });

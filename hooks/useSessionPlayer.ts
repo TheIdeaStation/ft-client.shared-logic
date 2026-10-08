@@ -1,8 +1,8 @@
 import { useReducer, useCallback } from "react";
-import type { TappingRound } from "@/types/tapping";
-import type { MicroSegment, Modality } from "@/lib/api-client";
-import { isMicroScript } from "@/lib/sessionScript";
-import type { SurveyAnswers } from "@/types/survey";
+import type { TappingRound } from "../types/tapping";
+import type { MicroSegment, Modality } from "../lib/api-client";
+import { isMicroScript } from "../lib/sessionScript";
+import type { SurveyAnswers } from "../types/survey";
 
 /**
  * Anything the player can run: a tapping script (rounds) or a micro-tool

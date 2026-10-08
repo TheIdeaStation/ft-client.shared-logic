@@ -4,7 +4,7 @@
  * Tests that Aria's quote on the home screen responds to user progress.
  */
 
-import { getContextualAriaQuote } from "@/lib/ariaQuotes";
+import { getContextualAriaQuote } from "../lib/ariaQuotes";
 
 const baseStats = {
   completedSessions: 0,

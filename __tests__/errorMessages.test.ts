@@ -1,7 +1,7 @@
 import {
   getUserFriendlyError,
   getEdgeFunctionError,
-} from "@/lib/errorMessages";
+} from "../lib/errorMessages";
 
 // ─── getUserFriendlyError ────────────────────────────────────────────
 
